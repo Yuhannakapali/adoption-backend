@@ -1,5 +1,6 @@
 @import "./variables";
-@import "node_modules/font-awesome/scss/font-awesome";
+@import "~font-awesome/css/font-awesome";
+@import "~bootstrap/dist/css/bootstrap.css";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
@@ -24,11 +25,13 @@ body{
 }
 
 a{
+    
     text-decoration: None;
     color:$white;
-
+    &:hover{
+        text-decoration:none;
+    }
 }
-
 ul li{
     list-style: none;
 }
@@ -53,10 +56,7 @@ img{
     max-width:100%;
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
+
 .btn{
     border: solid;
     
@@ -76,9 +76,16 @@ header{
         padding: 40px;
 
         .logo{
-            color: $white;
+            
             font-weight: bold;
             font-size: 28px;
+            a{
+                color: $white;
+                &:hover{
+                    color: darken($white, 10%);
+                }
+            }
+
         }
         .nav-links{
             width: 40%;
@@ -216,16 +223,20 @@ footer{
                 
             }
             li a{
-                display: block;
+            display: block;
             width: 50px;
             height: 50px;
             line-height: 50px;
             font-size: 16px;
             color: $light-blue;
-            background: #fff;
-            border: 1px solid #dadada;
+            background:$white;
+            border: 1px solid $white;
             text-align: center;
             border-radius: 50%;
+                &:hover{
+                    color: $white;
+                    background: $light-blue;
+                }
             
             }
         }
@@ -262,9 +273,75 @@ footer{
 
 
 // lostpet page css of content 
-
-.outer-box{
-    border: solid;
+.title{
+     padding-top:50px;  
+     h1{
+         color: $light-blue;
+     }
 }
 
-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiIxIiwiZW1haWwiOiJzbmpAZ21haWwuY29tIn0.awue15Ub0j1N-Z8lHFoiGIsSAvlsfNmVDPtXgggPW6M
+.content{
+    display: flex;
+
+    .outer-box{
+        padding: 50px;
+        
+        
+        .category-box{
+            
+            border: solid $light-blue ;
+            border-radius: 20px;
+            padding: 20px;
+
+            h2{
+                color: $text-color;
+            }
+            ol,li{
+                list-style: none;
+                font-size: 22px;
+                font-weight: bold;
+                
+                a{
+                    color: $text-color;
+                    &:hover{
+                        color: $light-blue;
+                    }
+                }
+            }
+            
+        }
+
+       h3{
+        padding-top: 20px;
+        color: $text-color;
+        a{
+            color: $text-color;
+            &:hover{
+                color: $light-blue;
+            }
+        }   
+       }
+    }
+
+    .pet-detail{
+        width: 100%; 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+
+        .animal-list{
+            padding: 10px;
+            align-items: center;
+            .individual-animal{
+                padding: 20px;
+                
+                img{
+                    height: auto;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+    
+

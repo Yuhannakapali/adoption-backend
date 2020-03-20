@@ -28,19 +28,74 @@
         </div><!--end top nav-->
     </header> {{-- end header --}}
 
-    <section class="Content">
-        <div class="outer-box">
-            <h2>category</h2>
-            <ol>
-                <li><a href="#">cats</a></li>
-                <li><a href="#">Dogs</a></li>
-                <li><a href="#">All</a></li>
-            </ol>
-            
+    <section >
+        <div class="title text-center">
+            <h1>lost Pets</h1>
         </div>
+        <div class="content text-center">
+            
+            <div class="outer-box">
+                <div class="category-box">
+                    <h2>Category</h2>
+                <ol>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Cats</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Dogs</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> All</a></li>
+                </ol>
+                </div>
+                <h3>found a <a href="#">pet?</a></h3>
+            </div>
 
-        <h3>found a <a href="#">pet?</a></h3>
+        
 
+            <div class="pet-detail">
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/dog.jpg" alt="">
+                    </div>
+                </div>
+                <div class="animal-list">
+                    <div class="individual-animal">
+                        <img src="./image/frontend/lostpet/smoldog.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
     </section>
